@@ -29,8 +29,7 @@
     <title>Piadas Engraçadas e Notícias de Vitória, ES</title>
     
     <style>
-        /* Estilos para o seu site (atualizados para roxo) */
-         body {
+        body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
@@ -143,7 +142,6 @@
         .advertisement a:hover {
             color: #4B0082; /* Roxo escuro */
         }
-
     </style>
 </head>
 <body>
@@ -158,7 +156,7 @@
         <ul id="piada-list">
             <!-- Piadas serão inseridas via JavaScript -->
         </ul>
-        <button onclick="inserirPiada()">mostrar piadas</button>
+        <button onclick="inserirPiada()">Mostrar Piadas</button>
     </section>
 
     <section id="noticias">
@@ -176,97 +174,58 @@
     <script>
         // Array com as piadas e propagandas
         const piadas = [
-            {
-                tipo: 'propaganda',
-                conteudo: "CONFERI ESSA OPORTUNIDADE <a href='index.html' target='_blank'>Confira!</a>"
-            },
-
-                { tipo: 'piada', conteudo: "Por que o livro foi ao médico? Porque ele tinha muitas páginas em branco!" },
-                { tipo: 'piada', conteudo: "O que o cachorro disse para o espelho? Ué, quem é você?" },
-                { tipo: 'piada', conteudo: "Por que o jacaré tirou o diploma de medicina? Porque ele queria ser um 'crocodilo' de plantão!" },
-                { tipo: 'piada', conteudo: "O que é um vegetariano que come carne? Um ex-vegetariano!" },
-                { tipo: 'piada', conteudo: "Por que o livro foi ao psicólogo? Porque ele estava com muitos capítulos difíceis!" },
-                { tipo: 'piada', conteudo: "Qual é o animal que gosta de estudar? O livro-rato!" },
-                { tipo: 'piada', conteudo: "O que o sol disse para a lua? Nossa, como você brilha!" },
-                { tipo: 'piada', conteudo: "Por que o telefone foi para a escola? Porque ele queria aprender a dar uma chamada!" },
-                { tipo: 'piada', conteudo: "O que o elétron falou para o átomo? 'Você é o meu núcleo, e eu sou a sua carga!'." },
-                { tipo: 'piada', conteudo: "Como o livro se despede? Até a próxima página!" },
-                { tipo: 'piada', conteudo: "O que o papel falou para a caneta? 'Você escreve tão bem!'" },
-                { tipo: 'piada', conteudo: "Qual é o cúmulo do azar? Não encontrar o controle remoto da TV!" },
-                { tipo: 'piada', conteudo: "Por que o pão foi ao hospital? Porque ele estava com a massa crua!" },
-                { tipo: 'piada', conteudo: "O que o tomate falou para o outro? Não se preocupe, vai ser só um molho!" },
-                { tipo: 'piada', conteudo: "O que a vaca falou para o boi? Me chama de bonita!" },
-                { tipo: 'piada', conteudo: "Qual é o cúmulo da matemática? Ficar sem resposta!" },
-                { tipo: 'piada', conteudo: "Por que o cavalo não gosta de jogo de cartas? Porque ele é sempre 'jogado'!" },
-                { tipo: 'piada', conteudo: "O que a árvore falou para a folha? Você é meu galho!" },
-                { tipo: 'piada', conteudo: "Por que o cachorro levou o computador para a escola? Porque ele queria aprender a latir no WhatsApp!" },
-                { tipo: 'piada', conteudo: "O que o papel disse para a folha? ‘Você me dá uma canetada?'" },
-                { tipo: 'piada', conteudo: "O que a abelha falou para a flor? Você está me dando 'pólen'!" },
-                { tipo: 'piada', conteudo: "Por que o jacaré não usa sapatos? Porque ele prefere 'escorregar'." },
-                { tipo: 'piada', conteudo: "O que o leite falou para o queijo? Você é o meu melhor amigo!" },
-                { tipo: 'piada', conteudo: "O que o relógio falou para o tempo? 'Você é sempre tão pontual!'" },
-                { tipo: 'piada', conteudo: "O que o computador disse para o vírus? 'Não gosto de você, você me deixa travado!'" },
-                { tipo: 'piada', conteudo: "Qual é o cúmulo do bom senso? Não ter mais piadas!" },
-                { tipo: 'piada', conteudo: "O que a chuva disse para a nuvem? 'Eu vou te dar um toque!'" },
-                { tipo: 'piada', conteudo: "O que o peixe falou para o tubarão? 'Você é um cara muito 'fininho'!'" },
-                { tipo: 'piada', conteudo: "O que o gato disse para o rato? 'Vou te pegar na 'ratada'!'" },
-                { tipo: 'piada', conteudo: "Qual é o cúmulo do gelo? Não derreter nunca!" },
-                { tipo: 'piada', conteudo: "O que a televisão falou para o controle remoto? 'Você é o meu mestre!'" },
-                { tipo: 'piada', conteudo: "Por que o computador foi ao médico? Porque ele estava com um vírus!" },
-                { tipo: 'piada', conteudo: "O que o livro falou para o aluno? 'Espero que você me leia com carinho!'" },
-                { tipo: 'piada', conteudo: "O que o polvo falou para o mar? 'Vamos nadar juntos em todas as direções!'" },
-                { tipo: 'piada', conteudo: "Por que o avião não gosta de trabalhar? Porque ele já está sempre no ar!" }
-
+            { tipo: 'propaganda', conteudo: "CONFERI ESSA OPORTUNIDADE <a href='index.html' target='_blank'>Confira!</a>" },
             { tipo: 'piada', conteudo: "Por que o livro foi ao médico? Porque ele tinha muitas páginas em branco!" },
-            { tipo: 'piada', conteudo: "O que o zero disse para o oito? Adorei o seu cinto!" },
-            { tipo: 'piada', conteudo: "O que a vaca disse para o boi? Te amo, muito mais que um leite!" },
-            { tipo: 'piada', conteudo: "Por que o tomate ficou vermelho? Porque viu o molho!" },
-            { tipo: 'piada', conteudo: "O que é um vegetariano que come carne? Um ex-vegetariano." },
-            { tipo: 'piada', conteudo: "Qual é o café favorito do elétron? O expresso!" },
-            { tipo: 'piada', conteudo: "Por que o esqueleto não luta com o cachorro? Porque ele não tem coragem!" },
-            { tipo: 'piada', conteudo: "O que o peixe falou para a água? Até logo, me molha!" },
-            { tipo: 'piada', conteudo: "O que o pão falou para o recheio? Te amo, você é minha metade!" },
-            { tipo: 'piada', conteudo: "Por que a aranha é boa de computador? Porque ela é ótima em navegar!" },
-            { tipo: 'piada', conteudo: "Qual é a comida que faz você rir? Sorrisal!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do eletricista? Não pagar a conta de luz!" },
-            { tipo: 'piada', conteudo: "Como o livro se despede? Até a próxima página!" },
-            { tipo: 'piada', conteudo: "O que o pato disse para a pata? Vem quackear comigo!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do aviador? Viver em alto estilo!" },
-            { tipo: 'piada', conteudo: "Por que o coelho não usa celular? Porque ele tem medo de receber chamadas de urgência!" },
-            { tipo: 'piada', conteudo: "O que o cavalo disse para o carro? Vai na ré!" },
-            { tipo: 'piada', conteudo: "Como é que o livro se chama? Livro do senhor!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo da velocidade? Dar um loop na vida!" },
-            { tipo: 'piada', conteudo: "O que o relógio falou para a hora? Não me deixe esperando!" },
-            { tipo: 'piada', conteudo: "Por que o jacaré é tão bom de matemática? Porque ele tem muita habilidade em 'cálculos'!" },
-            { tipo: 'piada', conteudo: "O que o cachorro falou para o espelho? Ué, quem é você?" },
-            { tipo: 'piada', conteudo: "Por que a vaca foi para o espaço? Para ir à lua!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do mecânico? Trabalhar na roda da fortuna!" },
-            { tipo: 'piada', conteudo: "O que é um cúmulo do amor? Namorar uma maçã!" },
-            { tipo: 'piada', conteudo: "O que o livro disse para o computador? Abra minha página!" },
-            { tipo: 'piada', conteudo: "O que o cachorro falou para o outro? Vamos dar uma volta, amigo!" },
-            { tipo: 'piada', conteudo: "Por que o pato não tem amigos? Porque é um pouco 'pato'!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do mistério? Não saber onde está!" },
-            { tipo: 'piada', conteudo: "Como a vaca diz bom dia? Moo!" },
-            { tipo: 'piada', conteudo: "Por que o polvo é bom com a música? Porque ele tem muitos tentáculos!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do exagero? Comer um litro de feijão!" },
-            { tipo: 'piada', conteudo: "Como o livro se chama? Fico em seu lugar!" },
-            { tipo: 'piada', conteudo: "O que a geladeira falou para o freezer? Estou com frio!" },
-            { tipo: 'piada', conteudo: "O que o leão falou para o ratinho? Que fofo, você me faz rir!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do caos? Derrubar um copo de água!" },
-            { tipo: 'piada', conteudo: "O que o bolo falou para o cupcake? Você é uma 'docura'!" },
-            { tipo: 'piada', conteudo: "Por que a laranja é tão feliz? Porque é doce!" },
-            { tipo: 'piada', conteudo: "O que o guarda-chuva falou para o sol? Me ajude a ficar mais fresquinho!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do azar? Não ter sorte nem na loteria!" },
-            { tipo: 'piada', conteudo: "Por que o cachorro vai à escola? Para aprender a latir corretamente!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo do exagero? Comer um prato de arroz!" },
-            { tipo: 'piada', conteudo: "O que o livro fez quando se sentiu mal? Foi para a terapia!" },
-            { tipo: 'piada', conteudo: "O que o número 6 disse para o número 9? Você é mais alto do que eu!" },
-            { tipo: 'piada', conteudo: "Por que o fantasma não faz amigos? Porque ele é um pouco 'transparente'!" },
-            { tipo: 'piada', conteudo: "O que a estrela disse para a lua? Vamos brilhar juntos!" },
-            { tipo: 'piada', conteudo: "O que o cachorro falou para o gatinho? Vamos brincar de esconde-esconde!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo da preguiça? Dormir enquanto se assiste à novela!" },
-            { tipo: 'piada', conteudo: "Por que o peixe não gosta de estudar? Porque ele é sempre 'molhado'!" },
-            { tipo: 'piada', conteudo: "Qual é o cúmulo da rapidez? Fazer 10 metros em 1 segundo!" }
+            { tipo: 'piada', conteudo: "O que o cachorro disse para o espelho? Ué, quem é você?" },
+            { tipo: 'piada', conteudo: "Por que o jacaré tirou o diploma de medicina? Porque ele queria ser um 'crocodilo' de plantão!" },
+                                    { tipo: 'piada', conteudo: "O que é um vegetariano que come carne? Um ex-vegetariano!" },
+                                    { tipo: 'piada', conteudo: "Por que o livro foi ao psicólogo? Porque ele estava com muitos capítulos difíceis!" },
+                                    { tipo: 'piada', conteudo: "Por que o milho é um bom ator? Porque ele é sempre o principal!" },
+                                    { tipo: 'piada', conteudo: "O que é um peixe sem olhos? Um peixe cego!" },
+                                    { tipo: 'piada', conteudo: "Como o elétron atende ao telefone? Alô, alô!" },
+                                    { tipo: 'piada', conteudo: "Por que a abelha sempre leva um mapa? Porque ela se perde na colmeia!" },
+                                    { tipo: 'piada', conteudo: "O que a abelha diz quando vê algo bonito? 'Uau, que zumbido!' " },
+                                    { tipo: 'piada', conteudo: "Por que a matemática é triste? Porque tem muitos problemas!" },
+                                    { tipo: 'piada', conteudo: "O que a terra falou para a lua? 'Você está muito distante, vim até aqui para te ver!'" },
+                                    { tipo: 'piada', conteudo: "Como o livro de história cumprimenta o livro de geografia? 'Oi, como está o mapeamento?'" },
+                                    { tipo: 'piada', conteudo: "Por que a vaca foi para o espaço? Para visitar a Via Láctea!" },
+                                    { tipo: 'piada', conteudo: "Por que o café foi ao médico? Porque estava se sentindo fraco!" },
+                                    { tipo: 'piada', conteudo: "O que é o cúmulo do azar? Ser atropelado por um ônibus escolar e ainda ter que pagar a multa!" },
+                                    { tipo: 'piada', conteudo: "O que aconteceu com o livro de matemática? Ele se perdeu no caminho da resolução!" },
+                                    { tipo: 'piada', conteudo: "O que é um cavalo com dor de estômago? Um cavalo com cólica!" },
+                                    { tipo: 'piada', conteudo: "Por que o cachorro atravessou a rua? Para buscar a chave da casa do outro lado!" },
+                                    { tipo: 'piada', conteudo: "Como o relógio diz para o livro? 'Eu sou o tempo, você é a história!'" },
+                                    { tipo: 'piada', conteudo: "Por que o computador foi ao médico? Porque ele estava com vírus!" },
+                                    { tipo: 'piada', conteudo: "O que aconteceu quando o pão saiu do forno? Ele se achou um ‘pão quente’!" },
+                                    { tipo: 'piada', conteudo: "Por que o lápis não gosta de ir ao médico? Porque ele tem medo de ser afiado!" },
+                                    { tipo: 'piada', conteudo: "O que é um escritor sem inspiração? Uma máquina de escrever sem tinta!" },
+                                    { tipo: 'piada', conteudo: "Como você chama um homem sem um braço e sem uma perna? Bob!" },
+                                    { tipo: 'piada', conteudo: "Por que o menino levou o livro para o supermercado? Porque ele queria fazer compras literárias!" },
+                                    { tipo: 'piada', conteudo: "Por que o computador foi ao café? Porque ele queria tomar um ‘byte’!" },
+                                    { tipo: 'piada', conteudo: "O que aconteceu com o tomate que não conseguiu se esconder? Foi espremido!" },
+                                    { tipo: 'piada', conteudo: "Por que o livro de poesia é tão romântico? Porque ele sempre está cheio de versos!" },
+                                    { tipo: 'piada', conteudo: "O que o sol falou para a lua? Você está tão cheia de ‘crateras’, deve ter uma vida agitada!" },
+                                    { tipo: 'piada', conteudo: "O que o cachorro disse quando viu a árvore de Natal? Que legal, uma árvore cheia de brinquedos!" },
+                                    { tipo: 'piada', conteudo: "Por que o lápis se sentiu um fracasso? Porque ele tinha uma ponta fraca!" },
+                                    { tipo: 'piada', conteudo: "O que a tinta fez depois de uma longa jornada? Se espalhou!" },
+                                    { tipo: 'piada', conteudo: "Por que a galinha atravessou a estrada? Para ir ao festival de ovos!" },
+                                    { tipo: 'piada', conteudo: "O que o relógio fez quando encontrou o calendário? Se apaixonou pelo seu tempo!" },
+                                    { tipo: 'piada', conteudo: "Como se chama um amigo no Facebook que gosta de música? Um ‘like’ de nota!" },
+                                    { tipo: 'piada', conteudo: "O que o telefone disse ao celular? ‘A sua linha de comunicação está fraca!’" },
+                                    { tipo: 'piada', conteudo: "Por que o filme foi ao cinema? Porque ele queria ser projetado!" },
+                                    { tipo: 'piada', conteudo: "O que o pão disse para a manteiga? ‘Eu me derreto todo por você!’" },
+                                    { tipo: 'piada', conteudo: "Por que o espelho é tão vaidoso? Porque ele se acha o melhor reflexo!" },
+                                    { tipo: 'piada', conteudo: "O que a geladeira disse para o micro-ondas? ‘Eu sou o verdadeiro frio na barriga!’" },
+                                    { tipo: 'piada', conteudo: "Por que o pinguim não gosta de calor? Porque ele adora o clima gelado!" },
+                                    { tipo: 'piada', conteudo: "O que o sapo disse ao telefonista? ‘Me chame quando houver uma ligação de pula-pula!’" },
+                                    { tipo: 'piada', conteudo: "Por que o moço foi ao banco? Para abrir uma conta de risadas!" },
+                                    { tipo: 'piada', conteudo: "O que aconteceu com o sapo quando ele entrou na piscina? Ele virou um ‘sapo mergulhador’!" },
+                                    { tipo: 'piada', conteudo: "Como o hamster pediu desculpas? ‘Me desculpe, eu só estava fazendo um ‘rolê’ no meu brinquedo!’" },
+
+            { tipo: 'piada', conteudo: "Por que o jacaré tirou o diploma de medicina? Porque ele queria ser um 'crocodilo' de plantão!" },
+            { tipo: 'piada', conteudo: "O que é um vegetariano que come carne? Um ex-vegetariano!" },
+            { tipo: 'piada', conteudo: "Por que o livro foi ao psicólogo? Porque ele estava com muitos capítulos difíceis!" },
+            // Adicione mais piadas aqui
         ];
 
         // Função para adicionar uma piada ou propaganda aleatória na lista
@@ -274,7 +233,7 @@
             const piadaList = document.getElementById("piada-list");
             piadaList.innerHTML = ""; // Limpar a lista antes de adicionar um novo item
 
-            // Adiciona uma propaganda sempre primeiro
+            // Adiciona uma propaganda sempre primeiro (se existir)
             const advertDiv = document.createElement("div");
             advertDiv.classList.add("advertisement");
             advertDiv.innerHTML = piadas[0].conteudo; // Aqui insere o conteúdo da propaganda
