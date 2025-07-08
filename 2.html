@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Piadas engraçadas e notícias de Vitória, ES, para dar boas risadas e ficar bem informado!">
+    <meta name="keywords" content="piadas, notícias, Vitória, ES, humor, piadas de cidade, piadas curtas">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Piadas Engraçadas e Notícias de Vitória, ES">
+    <meta property="og:description" content="Piadas engraçadas e notícias de Vitória, ES, para dar boas risadas e ficar bem informado!">
+    <meta property="og:image" content="URL-da-imagem.jpg"> <!-- Substitua pelo URL da sua imagem -->
+    <meta property="og:url" content="URL-da-página">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Piadas Engraçadas e Notícias de Vitória, ES">
+    <meta name="twitter:description" content="Piadas engraçadas e notícias de Vitória, ES, para dar boas risadas e ficar bem informado!">
+    <meta name="twitter:image" content="URL-da-imagem.jpg"> <!-- Substitua pelo URL da sua imagem -->
+    <meta name="twitter:url" content="URL-da-página">
+    
+    <!-- Google SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Nome do Autor">
+    <meta name="language" content="pt-br">
+    <meta name="geo.region" content="BR-ES"> <!-- Região do Brasil, no caso Espírito Santo -->
+    <meta name="geo.placename" content="Vitória">
+    
+    <title>Piadas Engraçadas e Notícias de Vitória, ES</title>
+    
+    <style>
+        /* Estilos para o seu site (atualizados para roxo) */
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #800080; /* Roxo */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #800080; /* Roxo */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .special-text {
+            font-weight: bold;
+            color: #800080; /* Roxo */
+        }
+
+        .news-link {
+            color: #800080; /* Roxo */
+            text-decoration: none;
+        }
+
+        .news-link:hover {
+            color: #4B0082; /* Roxo escuro */
+        }
+
+        #special-field {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1.2rem;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .special-char {
+            font-family: "Courier New", monospace;
+            color: #ff4500;
+        }
+
+        button {
+            background-color: #800080; /* Roxo */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #4B0082; /* Roxo escuro */
+        }
+
+        .advertisement {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .advertisement a {
+            color: #800080; /* Roxo */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .advertisement a:hover {
+            color: #4B0082; /* Roxo escuro */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Piadas Engraçadas e Notícias de Vitória, ES</h1>
+        <p>Aqui você se diverte e fica bem informado!</p>
+    </header>
+
+    <section id="piadas">
+        <h2>Piadas Engraçadas</h2>
+        <ul id="piada-list">
+            <!-- Piadas serão inseridas via JavaScript -->
+        </ul>
+        <button onclick="inserirPiada()">mostrar piadas</button>
+    </section>
+
+    <section id="noticias">
+        <h2>Notícias de Vitória, ES</h2>
+        <ul>
+            <li><a href="https://www.es.gov.br" class="news-link" target="_blank">Clique aqui para as últimas notícias de Vitória!</a></li>
+            <li><a href="https://www.gazetaonline.com.br" class="news-link" target="_blank">Confira as notícias da Gazeta Online</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; Piadas e Notícias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Array com as piadas e propagandas
+        const piadas = [
+            {
+                tipo: 'propaganda',
+                conteudo: "CONFERI ESSA OPORTUNIDADE <a href='index.html' target='_blank'>Confira!</a>"
+            },
+
+                { tipo: 'piada', conteudo: "Por que o livro foi ao médico? Porque ele tinha muitas páginas em branco!" },
+                { tipo: 'piada', conteudo: "O que o cachorro disse para o espelho? Ué, quem é você?" },
+                { tipo: 'piada', conteudo: "Por que o jacaré tirou o diploma de medicina? Porque ele queria ser um 'crocodilo' de plantão!" },
+                { tipo: 'piada', conteudo: "O que é um vegetariano que come carne? Um ex-vegetariano!" },
+                { tipo: 'piada', conteudo: "Por que o livro foi ao psicólogo? Porque ele estava com muitos capítulos difíceis!" },
+                { tipo: 'piada', conteudo: "Qual é o animal que gosta de estudar? O livro-rato!" },
+                { tipo: 'piada', conteudo: "O que o sol disse para a lua? Nossa, como você brilha!" },
+                { tipo: 'piada', conteudo: "Por que o telefone foi para a escola? Porque ele queria aprender a dar uma chamada!" },
+                { tipo: 'piada', conteudo: "O que o elétron falou para o átomo? 'Você é o meu núcleo, e eu sou a sua carga!'." },
+                { tipo: 'piada', conteudo: "Como o livro se despede? Até a próxima página!" },
+                { tipo: 'piada', conteudo: "O que o papel falou para a caneta? 'Você escreve tão bem!'" },
+                { tipo: 'piada', conteudo: "Qual é o cúmulo do azar? Não encontrar o controle remoto da TV!" },
+                { tipo: 'piada', conteudo: "Por que o pão foi ao hospital? Porque ele estava com a massa crua!" },
+                { tipo: 'piada', conteudo: "O que o tomate falou para o outro? Não se preocupe, vai ser só um molho!" },
+                { tipo: 'piada', conteudo: "O que a vaca falou para o boi? Me chama de bonita!" },
+                { tipo: 'piada', conteudo: "Qual é o cúmulo da matemática? Ficar sem resposta!" },
+                { tipo: 'piada', conteudo: "Por que o cavalo não gosta de jogo de cartas? Porque ele é sempre 'jogado'!" },
+                { tipo: 'piada', conteudo: "O que a árvore falou para a folha? Você é meu galho!" },
+                { tipo: 'piada', conteudo: "Por que o cachorro levou o computador para a escola? Porque ele queria aprender a latir no WhatsApp!" },
+                { tipo: 'piada', conteudo: "O que o papel disse para a folha? ‘Você me dá uma canetada?'" },
+                { tipo: 'piada', conteudo: "O que a abelha falou para a flor? Você está me dando 'pólen'!" },
+                { tipo: 'piada', conteudo: "Por que o jacaré não usa sapatos? Porque ele prefere 'escorregar'." },
+                { tipo: 'piada', conteudo: "O que o leite falou para o queijo? Você é o meu melhor amigo!" },
+                { tipo: 'piada', conteudo: "O que o relógio falou para o tempo? 'Você é sempre tão pontual!'" },
+                { tipo: 'piada', conteudo: "O que o computador disse para o vírus? 'Não gosto de você, você me deixa travado!'" },
+                { tipo: 'piada', conteudo: "Qual é o cúmulo do bom senso? Não ter mais piadas!" },
+                { tipo: 'piada', conteudo: "O que a chuva disse para a nuvem? 'Eu vou te dar um toque!'" },
+                { tipo: 'piada', conteudo: "O que o peixe falou para o tubarão? 'Você é um cara muito 'fininho'!'" },
+                { tipo: 'piada', conteudo: "O que o gato disse para o rato? 'Vou te pegar na 'ratada'!'" },
+                { tipo: 'piada', conteudo: "Qual é o cúmulo do gelo? Não derreter nunca!" },
+                { tipo: 'piada', conteudo: "O que a televisão falou para o controle remoto? 'Você é o meu mestre!'" },
+                { tipo: 'piada', conteudo: "Por que o computador foi ao médico? Porque ele estava com um vírus!" },
+                { tipo: 'piada', conteudo: "O que o livro falou para o aluno? 'Espero que você me leia com carinho!'" },
+                { tipo: 'piada', conteudo: "O que o polvo falou para o mar? 'Vamos nadar juntos em todas as direções!'" },
+                { tipo: 'piada', conteudo: "Por que o avião não gosta de trabalhar? Porque ele já está sempre no ar!" }
+
+            { tipo: 'piada', conteudo: "Por que o livro foi ao médico? Porque ele tinha muitas páginas em branco!" },
+            { tipo: 'piada', conteudo: "O que o zero disse para o oito? Adorei o seu cinto!" },
+            { tipo: 'piada', conteudo: "O que a vaca disse para o boi? Te amo, muito mais que um leite!" },
+            { tipo: 'piada', conteudo: "Por que o tomate ficou vermelho? Porque viu o molho!" },
+            { tipo: 'piada', conteudo: "O que é um vegetariano que come carne? Um ex-vegetariano." },
+            { tipo: 'piada', conteudo: "Qual é o café favorito do elétron? O expresso!" },
+            { tipo: 'piada', conteudo: "Por que o esqueleto não luta com o cachorro? Porque ele não tem coragem!" },
+            { tipo: 'piada', conteudo: "O que o peixe falou para a água? Até logo, me molha!" },
+            { tipo: 'piada', conteudo: "O que o pão falou para o recheio? Te amo, você é minha metade!" },
+            { tipo: 'piada', conteudo: "Por que a aranha é boa de computador? Porque ela é ótima em navegar!" },
+            { tipo: 'piada', conteudo: "Qual é a comida que faz você rir? Sorrisal!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do eletricista? Não pagar a conta de luz!" },
+            { tipo: 'piada', conteudo: "Como o livro se despede? Até a próxima página!" },
+            { tipo: 'piada', conteudo: "O que o pato disse para a pata? Vem quackear comigo!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do aviador? Viver em alto estilo!" },
+            { tipo: 'piada', conteudo: "Por que o coelho não usa celular? Porque ele tem medo de receber chamadas de urgência!" },
+            { tipo: 'piada', conteudo: "O que o cavalo disse para o carro? Vai na ré!" },
+            { tipo: 'piada', conteudo: "Como é que o livro se chama? Livro do senhor!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo da velocidade? Dar um loop na vida!" },
+            { tipo: 'piada', conteudo: "O que o relógio falou para a hora? Não me deixe esperando!" },
+            { tipo: 'piada', conteudo: "Por que o jacaré é tão bom de matemática? Porque ele tem muita habilidade em 'cálculos'!" },
+            { tipo: 'piada', conteudo: "O que o cachorro falou para o espelho? Ué, quem é você?" },
+            { tipo: 'piada', conteudo: "Por que a vaca foi para o espaço? Para ir à lua!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do mecânico? Trabalhar na roda da fortuna!" },
+            { tipo: 'piada', conteudo: "O que é um cúmulo do amor? Namorar uma maçã!" },
+            { tipo: 'piada', conteudo: "O que o livro disse para o computador? Abra minha página!" },
+            { tipo: 'piada', conteudo: "O que o cachorro falou para o outro? Vamos dar uma volta, amigo!" },
+            { tipo: 'piada', conteudo: "Por que o pato não tem amigos? Porque é um pouco 'pato'!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do mistério? Não saber onde está!" },
+            { tipo: 'piada', conteudo: "Como a vaca diz bom dia? Moo!" },
+            { tipo: 'piada', conteudo: "Por que o polvo é bom com a música? Porque ele tem muitos tentáculos!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do exagero? Comer um litro de feijão!" },
+            { tipo: 'piada', conteudo: "Como o livro se chama? Fico em seu lugar!" },
+            { tipo: 'piada', conteudo: "O que a geladeira falou para o freezer? Estou com frio!" },
+            { tipo: 'piada', conteudo: "O que o leão falou para o ratinho? Que fofo, você me faz rir!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do caos? Derrubar um copo de água!" },
+            { tipo: 'piada', conteudo: "O que o bolo falou para o cupcake? Você é uma 'docura'!" },
+            { tipo: 'piada', conteudo: "Por que a laranja é tão feliz? Porque é doce!" },
+            { tipo: 'piada', conteudo: "O que o guarda-chuva falou para o sol? Me ajude a ficar mais fresquinho!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do azar? Não ter sorte nem na loteria!" },
+            { tipo: 'piada', conteudo: "Por que o cachorro vai à escola? Para aprender a latir corretamente!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo do exagero? Comer um prato de arroz!" },
+            { tipo: 'piada', conteudo: "O que o livro fez quando se sentiu mal? Foi para a terapia!" },
+            { tipo: 'piada', conteudo: "O que o número 6 disse para o número 9? Você é mais alto do que eu!" },
+            { tipo: 'piada', conteudo: "Por que o fantasma não faz amigos? Porque ele é um pouco 'transparente'!" },
+            { tipo: 'piada', conteudo: "O que a estrela disse para a lua? Vamos brilhar juntos!" },
+            { tipo: 'piada', conteudo: "O que o cachorro falou para o gatinho? Vamos brincar de esconde-esconde!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo da preguiça? Dormir enquanto se assiste à novela!" },
+            { tipo: 'piada', conteudo: "Por que o peixe não gosta de estudar? Porque ele é sempre 'molhado'!" },
+            { tipo: 'piada', conteudo: "Qual é o cúmulo da rapidez? Fazer 10 metros em 1 segundo!" }
+        ];
+
+        // Função para adicionar uma piada ou propaganda aleatória na lista
+        function inserirPiada() {
+            const piadaList = document.getElementById("piada-list");
+            piadaList.innerHTML = ""; // Limpar a lista antes de adicionar um novo item
+
+            // Adiciona uma propaganda sempre primeiro
+            const advertDiv = document.createElement("div");
+            advertDiv.classList.add("advertisement");
+            advertDiv.innerHTML = piadas[0].conteudo; // Aqui insere o conteúdo da propaganda
+            const advertItem = document.createElement("li");
+            advertItem.appendChild(advertDiv); // Adiciona a propaganda
+            piadaList.appendChild(advertItem); // Adiciona o item na lista
+
+            // Adiciona uma piada aleatória após a propaganda
+            const piadaIndex = Math.floor(Math.random() * (piadas.length - 1)) + 1; // Para evitar escolher a propaganda
+            const item = piadas[piadaIndex];
+            const piadaLi = document.createElement("li");
+            piadaLi.textContent = item.conteudo;
+            piadaList.appendChild(piadaLi); // Adiciona a piada
+        }
+    </script>
+
+</body>
+</html>
